@@ -1,0 +1,55 @@
+# Початковий текст
+text = "Мова програмування Python надзвичайно популярна завдяки її простоті та потужності."
+
+# === Етап 1: Виконано Щепетков Євген ===
+# 1. Перетворення тексту у верхній регістр
+text_upper = text.upper()
+print("Текст у верхньому регістрі:", text_upper)
+
+# 2. Підрахунок кількості слів у тексті
+word_count = len(text.split())
+print("Кількість слів у тексті:", word_count)
+
+# 3. Заміна слова "Python" на "Пайтон"
+text_replaced = text.replace("Python", "Пайтон")
+print("Текст після заміни:", text_replaced)
+
+# === Етап 2: Виконано Півень Андрій ===
+# 1. Перетворення тексту у нижній регістр
+text_lower = text_replaced.lower()
+print("Текст у нижньому регістрі:", text_lower)
+
+# 2. Пошук позиції першого входження слова "програмування"
+position = text_replaced.find("програмування")
+print("Позиція слова 'програмування':", position)
+
+# 3. Перевірка, чи починається текст зі слова "Мова"
+starts_with_mova = text_replaced.startswith("Мова")
+print("Чи починається текст зі слова 'Мова':", starts_with_mova)
+
+# === Етап 3: Виконано Щепетков Євген ===
+# 1. Підрахунок кількості входжень слова "популярна"
+popular_count = text_lower.count("популярна")
+print("Кількість входжень слова 'популярна':", popular_count)
+
+# 2. Видалення зайвих пробілів на початку і в кінці тексту
+text_stripped = text_lower.strip()
+print("Текст без зайвих пробілів:", text_stripped)
+
+# 3. Зміна регістру тексту: перша літера кожного слова велика
+text_titled = text_stripped.title()
+print("Текст у форматі Title Case:", text_titled)
+
+# === Етап 4: Наступний студент ===
+# 1. Замінити слово "Пайтон" на "Python"
+text_final_replaced = text_titled.replace("Пайтон", "Python")
+print("Текст після заміни слова 'Пайтон':", text_final_replaced)
+
+# 2. Перевірити, чи закінчується текст словом "потужності."
+ends_with_potuzhnisti = text_final_replaced.endswith("Потужності.")
+print("Чи закінчується текст словом 'потужності.':", ends_with_potuzhnisti)
+
+# 3. Перевірити, чи складається текст лише з букв
+is_alpha = text_final_replaced.replace(" ", "").isalpha()
+print("Чи складається текст лише з букв:", is_alpha)
+
